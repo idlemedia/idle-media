@@ -156,6 +156,7 @@ section img {
   width: 100vw;
   top: 0;
   left: 0;
+  offset-position: 1000px;
 }
 .auto-scale {
   width: 100vw;
