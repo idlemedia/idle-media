@@ -175,10 +175,10 @@ section img {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  width: calc(36800vw / 1920);
-  height: calc(48000vw / 1920);
+  width: calc( var(--screen-multipler) * 36800vw / 1920);
+  height: calc( var(--screen-multipler) * 48000vw / 1920);
 
-  padding: calc(5600vw / 1920);
+  padding: calc( var(--screen-multipler) * 5600vw / 1920);
   color: white;
   border: 1px solid #197ff3;
   border-radius: calc(3200vw / 1920);
@@ -193,7 +193,7 @@ section img {
 .card img {
   position: relative;
   transform: translateZ(calc(8000vw / 1920));
-  width: calc(44800vw / 1920);
+  width: calc(var(--screen-multipler) * 44800vw / 1920);
   z-index: 10;
 }
 .card h3,
