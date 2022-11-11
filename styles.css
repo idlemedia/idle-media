@@ -10,7 +10,9 @@
   padding: 0;
 
 }
-
+.hide-overflow {
+   overflow-x: hidden; 
+}
 
 @media (orientation: portrait) {
   :root {
