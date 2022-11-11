@@ -10,6 +10,9 @@
   padding: 0;
 
 }
+main {
+  overflow-x: hidden;
+}
 
 @media (orientation: portrait) {
   :root {
@@ -22,7 +25,6 @@ header {
 body {
   z-index: -9999;
   background-color: var(--background-color);
-  overflow-x: hidden;
 }
 
 /* font */
