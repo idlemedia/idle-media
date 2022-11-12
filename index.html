@@ -34,23 +34,20 @@
                   </ul>
                 </nav>
              </header>
-            <div class=" no-margin section-1-title full-scale" > 
-              <div class="no-margin">
-              <img src="Images/people-group.svg" class="is-people"/>
-              <img src="Images/Planet.svg" class="is-planet" />
-              <img src="Images/International_Business_meeting_ultra.svg"/>
-              </div>
-              <div>
-                <div class="no-margin horizontal-align header_title_line" data-scroll data-scroll-class="header_title_in" >
+            <div class=" no-margin full-scale" > 
+              <div class="center-mobile">
+                <div class="no-margin horizontal-align header_title_line center-section-mobile" data-scroll data-scroll-class="header_title_in" >
                   <h1>Web Solutions</h1>
                   <h1 class="blue rubberBand">.</h1>
                 </div>
                 <h1 class="thin header_title_line" data-scroll data-scroll-class="header_title_in2">made simple</h1>
                 <p class="header_title_line" data-scroll data-scroll-class="header_title_in3">Build a website with no effort. Let us do the job for you!</p>
               </div>
-              
-              
-              <!-- <img src="Images/International_Business_meeting_ultra.svg" /> -->
+              <div class="no-margin landing-image">
+              <img src="Images/people-group.svg" class="is-people"/>
+              <img src="Images/Planet.svg" class="is-planet" />
+              <img src="Images/International_Business_meeting_ultra.svg"/>
+              </div>
             </div>
           </section>
           <section class="centerSection auto-scale" data-scroll-section>
@@ -180,7 +177,7 @@
             </div>    
           </section>
           <section class="dark-back auto-scale" data-scroll-section="" >
-            <div class="horizontal-align add-padding240" id="aboutus">
+            <div class="horizontal-align-adaptive add-padding240" id="aboutus">
               <div class="no-margin take-50" data-scroll="" data-scroll-speed="2">
                 <h5 class="blue"> about us</h5>
                 <h3 class="white">Collectively gathering 10000+ hours of experience</h3>
@@ -188,21 +185,9 @@
               <div class="no-margin take-50 white add-padding16 opacity-80 about-us" data-scroll="" data-scroll-class="about-us-visible" data-scroll-offset="50%">
                 <div class="no-margin about-us-sub" >
     
-                  <p class="poem" data-lining>Our extensive network of developers and designers allows us to access unprecedented levels of experience, esnuring lighting fast delivery speeds and quality unseen anywhere else. </p>
+                  <p class="poem center-mobile" data-lining>Our extensive network of developers and designers allows us to access unprecedented levels of experience, esnuring lighting fast delivery speeds and quality unseen anywhere else. </p>
                   <p><br></p>
-                  <p class="poem2" data-lining=""> A group of talented freelance designers and developers scattered across the globe allows us to work in every single time zone, ensuring that your wishes and desires have our attention every moment of every day!</p>
-                
-                  <!-- <p>Our extensive network of developers and designers allows us to access</p>
-                  <p>unprecedented levels of experience,</p>
-                  <p>esnuring lighting fast delivery speeds and</p>
-                  <p>quality unseen anywhere else.</p>
-                  <p><br></p>
-                  <p>A group of talented freelance designers and</p>
-                  <p>developers scattered across the globe allows</p>
-                  <p>us to work in every single time zone, ensuring</p>
-                  <p>that your wishes and desires have our</p>
-                  <p>attention every moment of every day!</p> -->
-    
+                  <p class="poem2 center-mobile" data-lining=""> A group of talented freelance designers and developers scattered across the globe allows us to work in every single time zone, ensuring that your wishes and desires have our attention every moment of every day!</p>   
                 </div>
                 
               </div>
@@ -218,7 +203,7 @@
                   <p>Schedule your meeting now</p>
                 <p>It's Free!</p>
                 <button class="button medium" data-tilt data-tilt-reverse="true" data-tilt-full-page-listening data-tilt-perspective="500"> 
-                  <a href="mailto:morganholmes@idlemedia.dev?subject=Schedule%20Meeting&body=Hey%2C%0D%0A%0D%0AI'd%20like%20to%20schedule%20a%20meeting%20and%20discuss%20how%20we%20could%20move%20forward%20to%20develop%20my%20website.%0D%0A%0D%0AWould%20you%20have%20time%20on%20dd%2Fmm%2Fyyyy%20at%20hh%3Amm%3F%0D%0A%0D%0ABest%2C%0D%0A%0D%0AName">
+                  <a href="mailto:elonmusk@spacex.ai?subject=Rocket%20Dilod&body=Dear%20Mr.%20Musk%2C%0D%0A%0D%0AIt%20appears%20to%20me%20as%20though%20Jeff%20has%20been%20inspired%20by%20the%20aerodynamic%20of%20a%20black%20dildo%20to%20make%20his%20rocket.%20Have%20you%20done%20a%20fluid%20simulation%20to%20see%20whether%20that%20could%20be%20a%20valid%20shape%20for%20starship%3F%0D%0A%0D%0AMany%20thanks%2C%0D%0A%0D%0AJesus%20Christ%20the%20fifth">
                     <p>Book Appointment</p> 
                   </a>
                 </button>
@@ -240,15 +225,11 @@
         el: document.querySelector(".locomotive-scroll"),
         smooth: true,
         lerp: 0.05,
-        multiplier: 0.3,
-        touchMultiplier: 0.5,
         smartphone: {
-          smooth: true,
-          multiplier: 100,
-          touchMultiplier: 100,
-          lerp: 1
+          smooth: true
         },
-        
+        multiplier: 0.3,
+        touchMultiplier: 0.5
       });
       </script>
       <script >
@@ -272,3 +253,5 @@
       </script>
   </body>
 </html>
+
+
