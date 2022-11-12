@@ -12,11 +12,12 @@
 
 @media (orientation: portrait) {
   :root {
-    --screen-multipler: 1.3;
+    --screen-multipler: 1.5;
   }
 }
 header {
-  padding: calc(2400vw / 1920) calc(18400vw / 1920) calc(18400vw / 1920);
+  padding: calc(2400vw / 1920) calc(18400vw / 1920)
+    calc(var(--screen-multipler) * 18400vw / 1920);
 }
 body {
   z-index: -9999;
@@ -126,6 +127,7 @@ body {
   height: calc(100vw * 9 / 16);
   transform: translatey(0.1%);
 }
+
 .nav a:hover {
   transform: scale(1.1);
   background: #b3d4fb;
@@ -151,6 +153,10 @@ div {
 }
 .section-1-title p {
   width: calc(100000vw / 1920);
+}
+.section-1-title {
+  display: flex;
+  flex-direction: column;
 }
 section {
   width: 100vw;
@@ -186,7 +192,7 @@ section img {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  width: calc(var(--screen-multipler) * 36800vw / 1920);
+  width: calc(var(--screen-multipler) * 0.9 * 36800vw / 1920);
   height: calc(var(--screen-multipler) * 48000vw / 1920);
 
   padding: calc(var(--screen-multipler) * 5600vw / 1920);
@@ -564,6 +570,11 @@ arrow {
   flex-direction: row;
   align-items: center;
 }
+.horizontal-align-adaptive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .z1 {
   z-index: -100;
 }
@@ -693,4 +704,40 @@ html.has-scroll-dragging {
 [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
   right: auto;
   bottom: 0;
+}
+
+@media (orientation: portrait) {
+  .center-mobile {
+    text-align: center;
+  }
+  .center-section-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .landing-image {
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+    scale: 1.3;
+    transform: translateY(-10%) translateX(-10%);
+    margin-top: calc(4 * 18400vw / 1920);
+  }
+
+  .full-scale {
+    width: 100vw;
+    /* height: calc(100vw * 9 / 16); */
+    height: fit-content;
+    transform: translatey(0.1%);
+  }
+  .full-scale-mobile {
+    width: 100vw;
+    /* height: calc(100vw * 9 / 16); */
+    height: fit-content;
+    transform: translatey(0.2%);
+  }
+  .horizontal-align-adaptive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
