@@ -178,7 +178,7 @@
           </section>
           <section class="dark-back auto-scale" data-scroll-section="" >
             <div class="horizontal-align-adaptive add-padding240" id="aboutus">
-              <div class="no-margin take-50" data-scroll="" data-scroll-speed="2">
+              <div class="no-margin take-50 center-mobile" data-scroll="" data-scroll-speed="2">
                 <h5 class="blue"> about us</h5>
                 <h3 class="white">Collectively gathering 10000+ hours of experience</h3>
               </div>
@@ -226,10 +226,11 @@
         smooth: true,
         lerp: 0.05,
         multiplier: 0.3,
-        touchMultiplier: 0.5,
+        touchMultiplier: 0.6,
         smartphone: {
-          smooth: false,
-          multiplier: 1
+          smooth: true,
+          multiplier: 100,
+          touchMultiplier: 200
         },
         
       });
@@ -255,5 +256,3 @@
       </script>
   </body>
 </html>
-
-
