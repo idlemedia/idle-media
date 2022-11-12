@@ -718,9 +718,9 @@ html.has-scroll-dragging {
   .landing-image {
     width: 100vw;
     height: calc(100vw * 9 / 16);
-    scale: 1.3;
-    transform: translateY(-10%) translateX(-10%);
-    margin-top: calc(4 * 18400vw / 1920);
+    scale: 2;
+    transform: translateY(-25%) translateX(-20%);
+    margin-top: calc(8 * 18400vw / 1920);
   }
 
   .full-scale {
